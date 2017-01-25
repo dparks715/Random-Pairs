@@ -1,15 +1,11 @@
 def create_pairs(names)
-	#works for even numbered tests
-	#takes inputted names, splits in twos,
-	#shuffles and converts to array 
-	#assigns to pair_array
-    pair_array = names.shuffle.each_slice(2).to_a
-       print pair_array 
-       if pair_array.class == Array
-       	puts "True"
-       else
-       	puts "False"
-       end
+	#shuffles, slices, places in pair_array
+	pair_array = names.shuffle.each_slice(2).to_a
+	#if incoming paramaters to names is uneven
+	#pushes last element into first, then removes last
+	if names.length % 2 == 1
+		pair_array[0] << pair_array[-1]
+		pair_array.delete[-1]
 	end
-
-create_pairs(['Dan', 'Marv', 'Tim', 'Shirley'])
+	pair_array
+end

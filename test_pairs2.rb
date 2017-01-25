@@ -13,4 +13,9 @@ class TestPairsArray < Minitest::Test
 		assert_equal(2, pairs.count)
 	end
 
+	def test_six_names_is_three_pairs
+		pairs = create_pairs(['Dan', 'Marv', 'Tim', 'Shirley', 'Chad', 'Chloe'])
+		assert_equal(3, pairs.count)
+	end
+
 end
