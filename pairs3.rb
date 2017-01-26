@@ -9,6 +9,8 @@ def more_pairs(names)
 	#need to delete after sample so it doesnt repeat
 	#made empty array to push pairs to later
 	all_pairs = []
+	#have to use while, until <= 2 was stopping at 2.
+	#uneven numbers will leave 1 name, need if statement to grab it
 		while names.length >= 2
 			student1 = names.sample
 			names.delete(student1)
@@ -21,11 +23,22 @@ def more_pairs(names)
 			#push paired array into new array
 			#because we want an array of pair arrays
 			all_pairs.push(pair)
+			#if statement within the loop to catch last name
+			if names.length == 1
+				#samples the last name
+				#pushes into last element
+				straggler = names.sample
+				all_pairs.last << straggler
+			end
+
 		end
 		#executes all_pairs
 		all_pairs
+		print all_pairs
 	end
 
 
 
 end
+
+more_pairs(['Dan', 'Marv', 'Kevin', 'April', 'Chad'])
