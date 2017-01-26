@@ -2,7 +2,8 @@ def more_pairs(names)
 	#trying to use sample method
 	#sample chooses a random element from the array
 	#need to delete after sample so it doesnt repeat
-		until names <= 2
+	all_pairs = []
+		until names.length <= 2
 			student1 = names.sample
 			names.delete(student1)
 
