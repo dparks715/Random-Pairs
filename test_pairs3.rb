@@ -13,8 +13,8 @@ class TestPairsArray < Minitest::Test
 		assert_equal(2, pairs.count)	
 	end
 
-#	def test_five_names_is_two_pair
-#		pairs = more_pairs(['Dan', 'Marv', 'Kevin', 'April', 'Chad'])
-#		assert_equal(2, pairs.count)	
-#	end
+	def test_five_names_is_two_pair
+		pairs = more_pairs(['Dan', 'Marv', 'Kevin', 'April', 'Chad'])
+		assert_equal(2, pairs.count)	
+	end
 end
