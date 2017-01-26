@@ -7,4 +7,9 @@ class TestPairsArray < Minitest::Test
 		pairs = create_pairs(['Dan', 'Marv'])
 		assert_equal(1, pairs.count)	
 	end
+
+	def test_four_names_are_two_arrays
+		pairs = create_pairs(['Dan', 'Marv', 'Kevin', 'April'])
+		assert_equal(2, pairs.count)	
+	end
 end
