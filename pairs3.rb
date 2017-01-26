@@ -1,8 +1,8 @@
 def more_pairs(names)
 	#if only 2 names, slice and convert to array
-	if names.length <= 2
+	if names.length == 2
 		array = names.each_slice(2).to_a
-
+	
 	else
 	#trying to use sample method
 	#sample chooses a random element from the array
@@ -34,11 +34,9 @@ def more_pairs(names)
 		end
 		#executes all_pairs
 		all_pairs
-		print all_pairs
+		
 	end
 
 
 
 end
-
-more_pairs(['Dan', 'Marv', 'Kevin', 'April', 'Chad'])
