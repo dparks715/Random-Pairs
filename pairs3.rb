@@ -9,7 +9,7 @@ def more_pairs(names)
 	#need to delete after sample so it doesnt repeat
 	#made empty array to push pairs to later
 	all_pairs = []
-		until names.length <= 2
+		while names.length >= 2
 			student1 = names.sample
 			names.delete(student1)
 
@@ -20,7 +20,7 @@ def more_pairs(names)
 			pair = [student1, student2]
 			#push paired array into new array
 			#because we want an array of pair arrays
-			all_pairs << pair
+			all_pairs.push(pair)
 		end
 		#executes all_pairs
 		all_pairs
