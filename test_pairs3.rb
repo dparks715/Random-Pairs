@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'random_pairs.rb'
+require_relative 'pairs3.rb'
 
 class TestPairsArray < Minitest::Test
 
@@ -12,4 +12,9 @@ class TestPairsArray < Minitest::Test
 		pairs = create_pairs(['Dan', 'Marv', 'Kevin', 'April'])
 		assert_equal(2, pairs.count)	
 	end
+
+#	def test_five_names_is_two_pair
+#		pairs = create_pairs(['Dan', 'Marv', 'Kevin', 'April', 'Chad'])
+#		assert_equal(2, pairs.count)	
+#	end
 end

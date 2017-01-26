@@ -10,7 +10,7 @@ def more_pairs(names)
 			names.delete(student2)
 			#now have 2 random names from the array
 			#push pair into an array
-			pair << student1, student2
+			pair = [student1, student2]
 			#push paired array into new array
 			#because we want an array of pair arrays
 			all_pairs << pair
