@@ -1,7 +1,13 @@
 def more_pairs(names)
+	#if only 2 names, slice and convert to array
+	if names.length <= 2
+		array = names.each_slice(2).to_a
+
+	else
 	#trying to use sample method
 	#sample chooses a random element from the array
 	#need to delete after sample so it doesnt repeat
+	#made empty array to push pairs to later
 	all_pairs = []
 		until names.length <= 2
 			student1 = names.sample
@@ -18,6 +24,7 @@ def more_pairs(names)
 		end
 		#executes all_pairs
 		all_pairs
+	end
 
 
 
